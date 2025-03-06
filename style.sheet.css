@@ -1,40 +1,20 @@
-/* Global Background */
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
-
 body {
     font-size: 16px;
     line-height: 1.5;
     font-family: Verdana;
-    margin: 0px;
+    margin: 0;
 }
 
+/* Layout Centering */
 header, nav ul, #content-wrapper {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-a {
-    color: #008000;
-}
-
-/* Logo Positioning */
-header {
-    position: relative;
-}
-
-img.logo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-header h1, nav ul {
-    padding-left: 50px;
-}
-
 
 /* Navbar Styles */
 nav {
@@ -61,6 +41,19 @@ nav a {
 nav a:hover {
     background-color: black;
     color: #9ae39a;
+}
+
+/* Header & Logo */
+header {
+    position: relative;
+}
+img.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header h1, nav ul {
+    padding-left: 50px;
 }
 
 /* Home Page Main Image */
@@ -107,4 +100,37 @@ aside a {
 main h2 {
     margin-top: 0;
     white-space: nowrap;
+}
+
+/* Bottom Columns */
+main section {
+    display: flex;
+}
+main section div {
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+}
+main section div:last-child {
+    margin-right: 0;
+}
+main section div h2 {
+    background-color: #008000;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+    padding: 0.5rem;
+}
+main section div img {
+    display: block;
+    margin: 0 auto;
+    border: 3px double #333;
+}
+
+/* Hyperlink Color */
+a {
+    color: #008000;
 }
