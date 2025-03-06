@@ -36,39 +36,75 @@ header h1, nav ul {
 }
 
 
-
-
-
-/* Flexbox for Columns */
-main > section {
+/* Navbar Styles */
+nav {
+    background-color: #008000;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
 }
-
-main > section > div {
-    background-color: #e7ffe7;
-    border: 1px solid #008000;
-    border-radius: 10px;
-    flex: 1;
-    margin-right: 1rem;
+li {
+    display: inline-block;
     padding: 1rem;
-    text-align: center;
 }
-
-main > section > div:last-child {
-    margin-right: 0;
-}
-
-/* Column Headings */
-main section div h2 {
-    background-color: #008000;
-    border-radius: 10px 10px 0 0;
+nav a {
+    text-decoration: none;
     color: white;
-    margin-top: 0;
+    font-weight: bold;
+    padding: 1rem;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: black;
+    color: #9ae39a;
 }
 
-/* Image Border Style */
-main section div img {
+/* Home Page Main Image */
+main img {
     border: 3px double #333;
-    display: block;
-    margin: 0 auto;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+/* Sidebar Styles */
+aside section {
+    background-color: white;
+    border: 1px solid #008000;
+    margin-bottom: 1rem;
+}
+aside h3 {
+    background-color: #008000;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+}
+aside a {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+/* Home Page Columns */
+#content-wrapper {
+    display: flex;
+}
+#content-wrapper aside {
+    background-color: #ccc;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 20px;
+    flex: 1;
+    order: 1;
+}
+#content-wrapper main {
+    flex: 4;
+    order: 2;
+}
+main h2 {
+    margin-top: 0;
+    white-space: nowrap;
 }
