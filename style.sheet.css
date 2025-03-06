@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Style */
 * {
     box-sizing: border-box;
 }
@@ -9,14 +9,14 @@ body {
     margin: 0;
 }
 
-/* Layout Centering */
+/* Layout */
 header, nav ul, #content-wrapper {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Navbar Styles */
+/* Navbar */
 nav {
     background-color: #008000;
     width: 100%;
@@ -43,7 +43,7 @@ nav a:hover {
     color: #9ae39a;
 }
 
-/* Header & Logo */
+/* Header and Logo */
 header {
     position: relative;
 }
@@ -56,14 +56,14 @@ header h1, nav ul {
     padding-left: 50px;
 }
 
-/* Home Page Main Image */
+/* Home Page */
 main img {
     border: 3px double #333;
     float: left;
     margin: 0.5rem 1rem 0.5rem 0;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 aside section {
     background-color: white;
     border: 1px solid #008000;
@@ -80,7 +80,7 @@ aside a {
     padding: 0.5rem;
 }
 
-/* Home Page Columns */
+/* Columns */
 #content-wrapper {
     display: flex;
 }
@@ -102,7 +102,7 @@ main h2 {
     white-space: nowrap;
 }
 
-/* Bottom Columns */
+/* Bottom Sections */
 main section {
     display: flex;
 }
@@ -130,7 +130,7 @@ main section div img {
     border: 3px double #333;
 }
 
-/* Hyperlink Color */
+/* Link Color */
 a {
     color: #008000;
 }
