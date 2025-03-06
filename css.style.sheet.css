@@ -1,0 +1,70 @@
+/* Global Background */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana;
+    margin: 0px;
+}
+
+header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: #008000;
+}
+
+/* Logo Positioning */
+header {
+    position: relative;
+}
+
+img.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+header h1, nav ul {
+    padding-left: 50px;
+}
+
+/* Flexbox for Columns */
+main > section {
+    display: flex;
+}
+
+main > section > div {
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+main > section > div:last-child {
+    margin-right: 0;
+}
+
+/* Column Headings */
+main section div h2 {
+    background-color: #008000;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    margin-top: 0;
+}
+
+/* Image Border Style */
+main section div img {
+    border: 3px double #333;
+    display: block;
+    margin: 0 auto;
+}
